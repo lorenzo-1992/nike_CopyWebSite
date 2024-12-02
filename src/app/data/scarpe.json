@@ -1,0 +1,573 @@
+{
+  "prodotti": [
+    {
+      "id": "1",
+      "nome": "Nike Air Max 270",
+      "categoria": "Sneakers",
+      "prezzo": 129.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max 270 offrono un comfort incredibile grazie all'ammortizzazione Air Max. Ideali per l'uso quotidiano e l'attività sportiva.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f884fba7-db72-4610-9ab5-cf24eb012886/NIKE+AIR+MAX+270+%28TD%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ce949a7-39f3-4acb-9f28-0c45badcdcb5/NIKE+AIR+MAX+270+%28TD%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e3dbb556-face-4f8c-a254-17eb151a43b8/NIKE+AIR+MAX+270+%28TD%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a8e61798-159d-4363-8438-e973576aeb35/NIKE+AIR+MAX+270+%28TD%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9732cf73-3a27-4a9e-9b1b-707653a470fa/NIKE+AIR+MAX+270+%28TD%29.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "2",
+      "nome": "Nike React Infinity Run Flyknit",
+      "categoria": "Running",
+      "prezzo": 159.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero/Giallo", "Grigio", "Bianco", "Verde", "Blu"],
+      "descrizione": "Le Nike React Infinity Run Flyknit sono progettate per la massima ammortizzazione e stabilità durante la corsa. Con tomaia in Flyknit per un comfort superiore.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/aa040b81-9822-4f62-9bba-270132845a82/NIKE+AIR+MAX+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9b9cd3c6-641a-4ef0-b4ac-e7ad1d8c377c/NIKE+AIR+MAX+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/167fe710-1f83-4bb9-a37d-94e8af00e042/NIKE+AIR+MAX+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5be0d18a-c462-4b1e-9c64-1f0b1044b240/NIKE+AIR+MAX+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7ed95791-bcf0-4214-8d81-b4db45e08adf/NIKE+AIR+MAX+1.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 3
+    },
+    {
+      "id": "3",
+      "nome": "Nike Air Force 1 Low",
+      "categoria": "Running",
+      "prezzo": 119.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": [
+        "Grigio/Arancione",
+        "Bianco",
+        "Blu/Verde",
+        "Rosso",
+        "Nero"
+      ],
+      "descrizione": "Le Nike Air Force 1 sono un'icona streetwear, caratterizzate da un design classico e un comfort eccezionale",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/57558712-5ebe-4abb-9984-879f9e896b4c/W+AIR+FORCE+1+%2707+FLYEASE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7849b40c-9e26-4896-bf85-6d27ac98d29d/W+AIR+FORCE+1+%2707+FLYEASE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cc064523-78aa-4f06-b131-ef3943225168/W+AIR+FORCE+1+%2707+FLYEASE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bd17ee22-a4bb-4667-9ab2-6d6e0d58e15a/W+AIR+FORCE+1+%2707+FLYEASE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/23bb2ec9-637a-4022-8c20-c32b89c2e587/W+AIR+FORCE+1+%2707+FLYEASE.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 4
+    },
+    {
+      "id": "4",
+      "nome": "Nike Air Zoom Pegasus 38",
+      "categoria": "Running",
+      "prezzo": 119.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": [
+        "Grigio/Arancione",
+        "Bianco/Nero",
+        "Blu/Verde",
+        "Rosso"
+      ],
+      "descrizione": "Le Nike Air Zoom Pegasus 38 offrono una corsa reattiva e ammortizzata grazie all'unità Zoom Air. Ideali per runner di tutti i livelli.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f66495f9-83c6-46db-9a17-3b24c89d4bbc/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6c03092d-3d7d-4fcb-8fba-355def643091/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cb05ffbc-0426-4e31-9ad8-50b0eeb8322d/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c4761d06-4d2b-4308-be08-784d2e8b7934/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4f44b2d1-dfc6-46fa-9d02-bd2aa6d4f365/M+NIKE+AIR+ZOOM+TR+1.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 3
+    },
+    {
+      "id": "5",
+      "nome": "Nike Air Jordan 1 Mid",
+      "categoria": "Basket",
+      "prezzo": 139.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": [
+        "Grigio/Arancione",
+        "Bianco/Nero",
+        "Blu/Verde",
+        "Rosso",
+        "Nero"
+      ],
+      "descrizione": "Le Nike Air Jordan 1 Mid sono scarpe da basket iconiche, ispirate al modello originale del 1985. Confortevoli e dal look distintivo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b35e2370-43fb-44d8-bc1a-c468804d46ae/WMNS+AIR+FORCE+1+%2707+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/756052e9-e496-444c-b193-2f9f45676276/WMNS+AIR+FORCE+1+%2707+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5b5bfb6a-610d-44ff-937e-c5380d71f2c9/WMNS+AIR+FORCE+1+%2707+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/867cce54-27de-4cdc-9239-a4083e859d9f/WMNS+AIR+FORCE+1+%2707+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6ac127a8-a729-4a75-b378-1a9c5877ab78/WMNS+AIR+FORCE+1+%2707+MID.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "6",
+      "nome": "Nike Revolution 5",
+      "categoria": "Running",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a0bd3c6b-0d87-4c4c-b0ea-584b89b893c4/NIKE+REVOLUTION+7+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7826e42a-5a32-4b7c-adeb-0c5e7e5174b5/NIKE+REVOLUTION+7+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5ca38aa8-9b4b-4ccb-bd89-56f26aa9baa6/NIKE+REVOLUTION+7+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8544e932-8343-4441-9759-78eaf30f4b97/NIKE+REVOLUTION+7+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/11d42953-de4f-447f-8417-fa340b367792/NIKE+REVOLUTION+7+%28GS%29.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "7",
+      "nome": "Nike Air Zoom Structure 24",
+      "categoria": "Running",
+      "prezzo": 129.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": [
+        "Nero/Grigio",
+        "Bianco/Nero",
+        "Blu",
+        "Rosso",
+        "Verde"
+      ],
+      "descrizione": "Nike Air Zoom Structure 24 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3c11eb61-0ba6-4ed9-93c7-7ede6cfc65e8/W+NIKE+AIR+ZOOM+STRUCTURE+25.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2791717e-1450-4776-a361-bd28217f3457/W+NIKE+AIR+ZOOM+STRUCTURE+25.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/dcf2a15a-fd6e-4242-84ea-26ea255c65e5/W+NIKE+AIR+ZOOM+STRUCTURE+25.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/19738c3d-46bc-4678-90d7-e2ebe1aa9e0c/W+NIKE+AIR+ZOOM+STRUCTURE+25.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a29f9550-d473-46e8-a071-339da1159433/W+NIKE+AIR+ZOOM+STRUCTURE+25.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "8",
+      "nome": "Nike Air Zoom Terra Kiger 7",
+      "categoria": "Running",
+      "prezzo": 139.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": [
+        "Nero/Grigio",
+        "Blu",
+        "Verde",
+        "Rosso",
+        "Arancione"
+      ],
+      "descrizione": "Le Nike Air Zoom Terra Kiger 7 sono progettate per il trail running, offrendo trazione e stabilità su terreni accidentati.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/42d6ee72-d308-4b21-8f1f-3d1be1d3b269/W+NIKE+ZOOMX+ZEGAMA+TRAIL+2.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bb5fce25-6578-4e88-bb9d-0d5b626b7f98/W+NIKE+ZOOMX+ZEGAMA+TRAIL+2.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/10400a4c-6444-47ff-8ed6-996bae680fdb/W+NIKE+ZOOMX+ZEGAMA+TRAIL+2.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3837c9ca-0988-48aa-ba97-84759c9d8f39/W+NIKE+ZOOMX+ZEGAMA+TRAIL+2.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/48680eca-1f7e-4c45-b6b8-bc48db80f61a/W+NIKE+ZOOMX+ZEGAMA+TRAIL+2.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "9",
+      "nome": "Nike Air Max 97",
+      "categoria": "Sneakers",
+      "prezzo": 149.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/fjfip8ga1ep22vhxdcew/NIKE+AIR+MAX+97.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/kcfjke64a50qadfdn2im/NIKE+AIR+MAX+97.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/zpgc2tnca6kijplj84xx/NIKE+AIR+MAX+97.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/zteqcdhfcrwq9fom01fg/NIKE+AIR+MAX+97.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/u4vsjywwphq6y6xtismt/NIKE+AIR+MAX+97.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "10",
+      "nome": "Nike Air VaporMax Plus",
+      "categoria": "Sneakers",
+      "prezzo": 209.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Blu", "Rosso", "Verde"],
+      "descrizione": "Le Nike Air VaporMax Plus offrono un'esperienza di corsa leggera e reattiva grazie all'unità VaporMax a tutta lunghezza.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c82627ea-5151-4ef1-904b-9c11f802ffc1/AIR+VAPORMAX+2023+FK.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d71cab64-d1ec-4b8c-b93e-751c86de1165/AIR+VAPORMAX+2023+FK.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0fd2a5b0-20d2-4cb4-a619-acbff16ae34f/AIR+VAPORMAX+2023+FK.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e840d582-6271-450f-b159-167cb2082770/AIR+VAPORMAX+2023+FK.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2f7c0396-bdfd-4e59-949c-63949985028e/AIR+VAPORMAX+2023+FK.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 3
+    },
+    {
+      "id": "11",
+      "nome": "Nike Air Max 90",
+      "categoria": "Sneakers",
+      "prezzo": 119.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max 90 sono sneakers classiche con dettagli iconici, offrendo comfort e stile per tutti i giorni.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8cc40f5a-3693-4976-9ce0-70ec9687889b/WMNS+AIR+MAX+90.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/67bf9ec3-4be7-41f1-ae51-9d066692e1fe/WMNS+AIR+MAX+90.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3ee6af6d-9c3c-41dd-b3ad-4ffe9461cdf6/WMNS+AIR+MAX+90.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b74263b7-71f6-4f17-a17d-14cc5a03ad9d/WMNS+AIR+MAX+90.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0e9bce63-d3f9-4eb8-b4b6-9b1bb2804739/WMNS+AIR+MAX+90.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "12",
+      "nome": "Nike Air Zoom Vomero 16",
+      "categoria": "Running",
+      "prezzo": 139.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Zoom Vomero 16 sono scarpe da corsa ammortizzate e reattive, ideali per lunghe distanze e allenamenti intensi.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4624d760-034b-4484-8358-8ad65f00a01a/NIKE+VOMERO+17+WIDE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ba3ef8cf-996f-44c9-adc2-8c72e139eed5/NIKE+VOMERO+17+WIDE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e1f7ccfc-8836-4b1a-bd17-2d53d76fd691/NIKE+VOMERO+17+WIDE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ea581fba-3c7f-427c-8e62-fa1f29869866/NIKE+VOMERO+17+WIDE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8fe3cc9d-3974-4f20-af1b-64875512b91c/NIKE+VOMERO+17+WIDE.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "13",
+      "nome": "Nike Air Jordan 4 Retro",
+      "categoria": "basket",
+      "prezzo": 199.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Jordan 4 Retro sono scarpe da basket iconiche con dettagli classici e comfort eccezionale.",
+      "immagini": [
+        "https://static.nike.com/a/images/w_1280,q_auto,f_auto/6277086f-b7f9-4e91-957c-9fdb4e822ede/air-jordan-4-fear-fq8138-002-%E2%80%93-data-del-lancio.jpg",
+        "https://static.nike.com/a/images/w_1280,q_auto,f_auto/05ab22d8-9ace-4e06-bb43-3545d8fd4606/air-jordan-4-fear-fq8138-002-%E2%80%93-data-del-lancio.jpg",
+        "https://static.nike.com/a/images/w_1280,q_auto,f_auto/8f151cf0-f024-43b4-9d8f-15d4d984d4a3/air-jordan-4-fear-fq8138-002-%E2%80%93-data-del-lancio.jpg",
+        "https://static.nike.com/a/images/w_1280,q_auto,f_auto/1df67177-7497-4869-b24d-e57c322e81c1/air-jordan-4-fear-fq8138-002-%E2%80%93-data-del-lancio.jpg",
+        "https://static.nike.com/a/images/w_1280,q_auto,f_auto/211082a1-e97c-4b1c-8915-a9ce6ab42327/air-jordan-4-fear-fq8138-002-%E2%80%93-data-del-lancio.jpg"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "14",
+      "nome": "Nike Blazer Mid '77 Vintage",
+      "categoria": "Sneakers",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Blazer Mid '77 Vintage sono sneakers retrò con uno stile distintivo e una tomaia in pelle premium.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/afb77160-3943-488d-986e-3c0ca895af31/NIKE+SB+ZOOM+BLAZER+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4bee4def-99e0-44b1-a32a-0786618a96c5/NIKE+SB+ZOOM+BLAZER+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/700ec8be-dca7-498b-8858-0c453c811c87/NIKE+SB+ZOOM+BLAZER+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c1ea3b90-8e27-4854-bb1c-45fbcbafb39c/NIKE+SB+ZOOM+BLAZER+MID.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4a0d3d0b-640b-4e81-ad6f-a69b7273cb8b/NIKE+SB+ZOOM+BLAZER+MID.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "15",
+      "nome": "Nike Air Max Excee",
+      "categoria": "Sneakers",
+      "prezzo": 159.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max Excee sono ispirate alle iconiche Air Max 90, offrendo comfort e stile in un design moderno.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a7f07bf7-7896-48c7-b53d-ab5daf86f84e/NIKE+AIR+MAX+EXCEE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/342b9b0a-5615-45f7-99da-f656a4af6b94/NIKE+AIR+MAX+EXCEE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d264d0a1-b7e1-4eee-bac9-0be7a2593231/NIKE+AIR+MAX+EXCEE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4fabec26-d3a4-4908-95d9-104b54519085/NIKE+AIR+MAX+EXCEE.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/509fdd78-cc0c-4f44-931e-1d49f12bfc55/NIKE+AIR+MAX+EXCEE.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "16",
+      "nome": "Nike Air Zoom SuperRep 2",
+      "categoria": "training",
+      "prezzo": 179.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Zoom SuperRep 2 sono scarpe da training con ammortizzazione reattiva e supporto per gli allenamenti più intensi.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9e0de4e1-6862-4d96-9821-94050582defe/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/64b80605-3d11-43e5-88bb-ea1fc44cabcf/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/ece7a799-cdf1-45df-aa17-b744080b8e88/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6cc5e08f-8b07-4ca5-bab1-b71e9a85e7ce/M+NIKE+AIR+ZOOM+TR+1.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f6b08bcd-3ae5-4086-bab8-b29799e79596/M+NIKE+AIR+ZOOM+TR+1.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "17",
+      "nome": "Nike Air Zoom Freak 3",
+      "categoria": "Basket",
+      "prezzo": 179.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Zoom Freak 3 sono scarpe da basket progettate per la potenza e la velocità di Giannis Antetokounmpo. Massima trazione e stabilità.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bbffcc1d-711a-42fc-89e5-0b775b175876/ZOOM+FREAK+5.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/112fb0a7-e17a-422c-be52-4fd1e858c64f/ZOOM+FREAK+5.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6fbaa930-2b47-4c50-83f0-ce42547526b2/ZOOM+FREAK+5.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/73119270-da6d-45ef-b3fd-c14a48cd4cfa/ZOOM+FREAK+5.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/99addcc2-0917-4ac1-9629-112c90c6fcde/ZOOM+FREAK+5.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "18",
+      "nome": "Nike Renew Run",
+      "categoria": "Running",
+      "prezzo": 119.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Renew Run sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/vh5lxocjfr2qato5fb8e/W+NIKE+SHOX+TL.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/xzjwjqqyjxx10h2u8ftw/W+NIKE+SHOX+TL.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/azugu2xi7sdsqu4r2ul7/W+NIKE+SHOX+TL.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/jgv0skq8cehbwi6qpbwb/W+NIKE+SHOX+TL.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b2i01fga7yzmgmyjrxl9/W+NIKE+SHOX+TL.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "19",
+      "nome": "Nike Air Max Sequent 4",
+      "categoria": "Running",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b08451dc-9d3b-457b-b630-47c0d053cba9/WMNS+NIKE+AIR+MAX+SC.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/66676c32-77ba-4cc7-88e5-51f60b20a887/WMNS+NIKE+AIR+MAX+SC.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/6badf361-f289-4353-a512-36c665a2210d/WMNS+NIKE+AIR+MAX+SC.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/472fb0e5-4539-403a-8373-9f5fb901bc95/WMNS+NIKE+AIR+MAX+SC.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bd2f4068-b923-4f4c-a058-9fd50a089521/WMNS+NIKE+AIR+MAX+SC.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "20",
+      "nome": "Nike Air Max 2090",
+      "categoria": "Sneakers",
+      "prezzo": 179.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max 2090 sono ispirate all'iconica Air Max 90, con un design futuristico e un'ammortizzazione avanzata.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5bc5bc81-9e76-444f-93ce-c7e1446f17af/AIR+MAX+DN.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/65e2049e-58fd-46e5-97fa-f975b60a579d/AIR+MAX+DN.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9b8e2890-2731-45c0-ab25-fb90cd61e20c/AIR+MAX+DN.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/626acfff-8d4c-4088-90cb-d5f6d1fe15d4/AIR+MAX+DN.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/27fe22ce-d0d4-417b-9f51-34eb1a4e3c27/AIR+MAX+DN.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "21",
+      "nome": "Nike Joyride Run Flyknit",
+      "categoria": "Running",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7d4ac146-9777-41fb-95f5-14c870014485/NIKE+FLYKNIT+BLOOM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/10a9af63-e0c4-40e0-94e9-268d554ebee7/NIKE+FLYKNIT+BLOOM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/2839ad97-da43-448a-9f06-5ca2990b9a40/NIKE+FLYKNIT+BLOOM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b69e3510-e27a-4029-93f4-78f5b9cb3ed4/NIKE+FLYKNIT+BLOOM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/8a72c485-0b9b-4590-83b1-b643e8df14b7/NIKE+FLYKNIT+BLOOM.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 4
+    },
+    {
+      "id": "22",
+      "nome": "Nike Air Max Tailwind IV",
+      "categoria": "Running",
+      "prezzo": 179.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max Tailwind IV sono scarpe da running retrò con un'ammortizzazione Air Max e uno stile distintivo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e97d9a76-696e-4d8d-ad2f-7ba59f6f0975/W+AIR+ZOOM+PEGASUS+41+PRM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/caa703eb-1da3-4111-943d-62b03239cf0c/W+AIR+ZOOM+PEGASUS+41+PRM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/0fe054e3-b551-4b4e-95e4-53665e539d41/W+AIR+ZOOM+PEGASUS+41+PRM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/551fb27d-ec13-4a79-a4e6-edc998662dae/W+AIR+ZOOM+PEGASUS+41+PRM.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3e8ec601-c5d1-4968-9fa3-82ff56c80307/W+AIR+ZOOM+PEGASUS+41+PRM.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "23",
+      "nome": "Nike Air Zoom Structure 23",
+      "categoria": "Running",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Scarpa da calcio a taglio alto FG. Calzata aderente: se preferisci un po' più di comodità, ti consigliamo di ordinare mezza misura in più",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/3f5dec25-5062-4afa-84de-5345165b2c46/ZM+SUPERFLY+10+ELITE+MDS+FG.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/43fdbf46-f3bd-4332-8976-f06373695285/ZM+SUPERFLY+10+ELITE+MDS+FG.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7132f4c7-1845-467a-87d4-371802621c22/ZM+SUPERFLY+10+ELITE+MDS+FG.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/39d714af-deaa-458c-96fd-f813d257044c/ZM+SUPERFLY+10+ELITE+MDS+FG.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50a73ac2-a52c-40b6-bec5-898530250c09/ZM+SUPERFLY+10+ELITE+MDS+FG.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "24",
+      "nome": "Nike Revolution 5",
+      "categoria": "Sneakers",
+      "prezzo": 159.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/610ab405-6908-4832-b6b4-176bf2e30267/W+AIR+MAX+270.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4cfadd5c-641e-47e0-8645-1308cb2bc3ad/W+AIR+MAX+270.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/b7833bb4-fc4c-48f6-b232-04329b951694/W+AIR+MAX+270.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/32fdb600-0712-466e-82d0-c6b75a3bf3ab/W+AIR+MAX+270.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9fc2be79-ac98-459d-836a-7ace5814149b/W+AIR+MAX+270.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "25",
+      "nome": "Nike Air Zoom Wildhorse 7",
+      "categoria": "Running",
+      "prezzo": 189.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/579c643e-5b53-4ddf-befa-cca834f6094c/WMNS+JUNIPER+TRAIL+2+GTX.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/785c69cc-4bff-4279-8479-780ec242b25a/WMNS+JUNIPER+TRAIL+2+GTX.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1e57f96c-8a7e-4f32-ab3f-086a390d426a/WMNS+JUNIPER+TRAIL+2+GTX.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/027e651d-2073-4831-98f1-28e494f49687/WMNS+JUNIPER+TRAIL+2+GTX.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a11c5e93-2f25-4e4c-b5bf-fae253d46afa/WMNS+JUNIPER+TRAIL+2+GTX.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "26",
+      "nome": "Nike React Infinity Run Flyknit 2",
+      "categoria": "Running",
+      "prezzo": 149.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Nike React Infinity Run Flyknit 2 sono scarpe da trail running progettate per la massima trazione e stabilità su terreni accidentati.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9e6803f3-eb46-4b5a-b99d-7170a5635980/NIKE+REACTX+INFINITY+RUN+4.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/cbb8eb31-1113-4f37-baf4-7d8f131015f0/NIKE+REACTX+INFINITY+RUN+4.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/f9692f63-3059-460f-bcef-50dacac87d73/NIKE+REACTX+INFINITY+RUN+4.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d72d9ba2-d016-4d67-b8bd-900d05fcce4b/NIKE+REACTX+INFINITY+RUN+4.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/7369d3c8-4cbb-43c6-b7d2-4668393c75c8/NIKE+REACTX+INFINITY+RUN+4.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    },
+    {
+      "id": "27",
+      "nome": "Nike Air Zoom SuperRep",
+      "categoria": "Basket",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/70bc7f46-876a-43b3-aff8-c780b14114a4/NIKE+AIR+ZOOM+CROSSOVER+2+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/180414f8-bacd-4bd9-afe3-4d5151f5c4cc/NIKE+AIR+ZOOM+CROSSOVER+2+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/be887f66-059e-4f63-8157-8435b0f38546/NIKE+AIR+ZOOM+CROSSOVER+2+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e9640da5-8f20-4ba8-97cb-87e9864641b7/NIKE+AIR+ZOOM+CROSSOVER+2+%28GS%29.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c15207ec-6d81-4720-82eb-005858ad8fea/NIKE+AIR+ZOOM+CROSSOVER+2+%28GS%29.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "28",
+      "nome": "Nike Metcon 7",
+      "categoria": "Running",
+      "prezzo": 79.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Revolution 5 sono scarpe leggere e traspiranti, ideali per correre o per l'uso quotidiano. Ottimo rapporto qualità-prezzo.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/20677a8b-c230-4664-ba5a-ea8b0f0c4658/W+NIKE+FREE+METCON+6.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/41334656-d461-443f-a415-6f5f2ef6a0c5/W+NIKE+FREE+METCON+6.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/35258f6a-9771-4cea-9426-cfeaaaa9bfac/W+NIKE+FREE+METCON+6.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4cac6b5e-68e7-4fa8-b131-b56e18b88d52/W+NIKE+FREE+METCON+6.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/e99134f7-135b-492d-ad62-4a9ae9ad050c/W+NIKE+FREE+METCON+6.png"
+      ],
+      "nuovo_arrivo": false,
+      "best_seller": 5
+    },
+    {
+      "id": "29",
+      "nome": "Nike React Element 55",
+      "categoria": "Running",
+      "prezzo": 169.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike React Element 55 sono sneakers confortevoli e leggere, ideali per lo stile quotidiano.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1252b86c-b89e-416c-aaa5-eb9a6dd461d4/NIKE+REACT+VISION+GS.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c8fa46fc-d28d-4c40-b9a7-c6fc49603368/NIKE+REACT+VISION+GS.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9bde1e6c-14e0-4f4c-a5dc-fa60fb7f6c4b/NIKE+REACT+VISION+GS.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9a3b299f-efb4-4925-9870-595ed544550c/NIKE+REACT+VISION+GS.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/36b56cd3-e8a1-4a03-9e7c-dc364ae4828c/NIKE+REACT+VISION+GS.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 4
+    },
+    {
+      "id": "30",
+      "nome": "Nike Air Max 95",
+      "categoria": "Running",
+      "prezzo": 159.99,
+      "taglie_disponibili": ["38", "39", "40", "41", "42", "43", "44", "45"],
+      "colori_disponibili": ["Nero", "Bianco", "Grigio", "Blu", "Rosso"],
+      "descrizione": "Le Nike Air Max 95 sono scarpe iconiche con un design distintivo e un'ammortizzazione Air Max visibile.",
+      "immagini": [
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9443b72f-d2b6-47d1-a808-0d23abddd636/NIKE+AIR+MAX+95.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/50eb0aaf-0a2b-4bfc-8652-6fbca92f88e4/NIKE+AIR+MAX+95.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/95fd38be-9ecf-4263-993d-d6ea6a63f052/NIKE+AIR+MAX+95.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/91e3883d-784d-43e3-9564-d2c106805446/NIKE+AIR+MAX+95.png",
+        "https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/76a22842-6969-4d19-bf91-1fc10e645e34/NIKE+AIR+MAX+95.png"
+      ],
+      "nuovo_arrivo": true,
+      "best_seller": 5
+    }
+  ]
+}

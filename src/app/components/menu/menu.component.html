@@ -1,0 +1,287 @@
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="icons">
+        <a routerLink="/home"
+          ><img class="nike" src="/nike.png" alt="logo della nike"
+        /></a>
+      </div>
+      <div class="top-links">
+        <!-- Pulsante Accedi -->
+        <a *ngIf="!loggedUser" routerLink="/login">Accedi</a>
+
+        <!-- Link Area Privata -->
+        <a *ngIf="loggedUser" routerLink="/private">Area Privata</a>
+
+        <!-- Pulsante Esci -->
+        <button *ngIf="loggedUser" (click)="logout()" class="logout-btn">
+          Esci
+        </button>
+      </div>
+    </div>
+    <div class="search-container" (click)="preventClose($event)">
+      <i id="lens" class="fa-solid fa-magnifying-glass"></i>
+      <input
+        type="search"
+        placeholder="Cerca prodotti o categorie..."
+        [(ngModel)]="searchTerm"
+        (keyup)="onSearch()"
+        (focus)="isSearchActive = true"
+      />
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-cart-shopping" routerLink="/cart"></i>
+    </div>
+
+    <!-- Risultati della ricerca -->
+    <div
+      class="search-results"
+      *ngIf="isSearchActive && searchResults.length > 0"
+    >
+      <ul>
+        <li *ngFor="let result of searchResults">
+          <a
+            [routerLink]="['/scarpa/' + result.id]"
+            class="search-item"
+            (click)="clearSearch()"
+          >
+            <img
+              [src]="result.immagini[0]"
+              [alt]="result.nome"
+              class="search-result-image"
+            />
+            <div class="search-result-info">
+              <p class="product-name">{{ result.nome }}</p>
+              <p class="product-category">{{ result.categoria }}</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="menu-desktop">
+      <ul id="menu-list">
+        <li>
+          <a href="#">Novita in evidenza</a>
+          <div>
+            <ul>
+              <li><a href="#">Tutti i nuovi arrivi</a></li>
+              <li><a href="#">Best seller</a></li>
+              <li><a href="#">Member shop</a></li>
+              <li><a href="#">Calendario dei lanci SNKRS</a></li>
+              <li><a href="#">Shop Air</a></li>
+              <li><a href="#">Summer of Sport</a></li>
+              <li><a href="#">I must-have per il rientro a scuola</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Air Force 1</a></li>
+              <li><a href="#">Air Jordan 1</a></li>
+              <li><a href="#">Air Max</a></li>
+              <li><a href="#">Dunk</a></li>
+              <li><a href="#">Blazer</a></li>
+              <li><a href="#">Pegasus</a></li>
+              <li><a href="#">Mercurial</a></li>
+            </ul>
+
+            <ul>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Basket</a></li>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Danza</a></li>
+              <li><a href="#">Skateboard</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Air Max Home</a></li>
+              <li><a href="#">Sneakers Y2K</a></li>
+              <li><a href="#">Nike Style By</a></li>
+              <li><a href="#">Teenager</a></li>
+              <li><a href="#">EasyOn</a></li>
+              <li><a href="#">Idee regalo Nike</a></li>
+              <li><a href="#">Sostenibilità</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Uomo</a>
+          <div>
+            <ul>
+              <li><a href="#">Tutte le scarpe</a></li>
+              <li><a href="#">LifeStyle</a></li>
+              <li><a href="#">Josrdan</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Fitnes & Training</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Skateboard</a></li>
+              <li><a href="#">Baket</a></li>
+              <li><a href="#">Nike By You</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutto l'abbigliamento</a></li>
+              <li><a href="#">Maglie e t-shirt</a></li>
+              <li><a href="#">Felpe</a></li>
+              <li><a href="#">Leggins</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Pantaloni</a></li>
+              <li><a href="#">Set coordinati</a></li>
+              <li><a href="#">Ghiacche</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Basket</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Danza</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Golf</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutti gli accessori</a></li>
+              <li><a href="#">Borse e zaini</a></li>
+              <li><a href="#">Copricapi</a></li>
+              <li><a href="#">Calze</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Donna</a>
+          <div>
+            <ul>
+              <li><a href="#">Tutte le scarpe</a></li>
+              <li><a href="#">LifeStyle</a></li>
+              <li><a href="#">Josrdan</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Fitnes & Training</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Nike By You</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutto l'abbigliamento</a></li>
+              <li><a href="#">Maglie e t-shirt</a></li>
+              <li><a href="#">Felpe</a></li>
+              <li><a href="#">Leggins</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Pantaloni</a></li>
+              <li><a href="#">Set coordinati</a></li>
+              <li><a href="#">Ghiacche</a></li>
+              <li><a href="#">Reggiseni sportivi</a></li>
+              <li><a href="#">Gonne e abiti</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Fitness</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Basket</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Danza</a></li>
+              <li><a href="#">Yoga</a></li>
+              <li><a href="#">Golf</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutti gli accessori</a></li>
+              <li><a href="#">Borse e zaini</a></li>
+              <li><a href="#">Copricapi</a></li>
+              <li><a href="#">Calze</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Kids</a>
+          <div>
+            <ul>
+              <li><a href="#">Tutte le scarpe</a></li>
+              <li><a href="#">LifeStyle</a></li>
+              <li><a href="#">Josrdan</a></li>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Fitnes & Training</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Basket</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutto l'abbigliamento</a></li>
+              <li><a href="#">Maglie e t-shirt</a></li>
+              <li><a href="#">Felpe</a></li>
+              <li><a href="#">Tute</a></li>
+              <li><a href="#">Shorts</a></li>
+              <li><a href="#">Abbigliamento sportivo</a></li>
+              <li><a href="#">Pantaloni</a></li>
+              <li><a href="#">Set coordinati</a></li>
+              <li><a href="#">Ghiacche</a></li>
+              <li><a href="#">Divise e maglie</a></li>
+              <li><a href="#">Gonne e abiti</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Bebe e bimbo/a (0-3 anni)</a></li>
+              <li><a href="#">Bambino/a (3-7 anni)</a></li>
+              <li><a href="#">Ragazzo/a (7-15 anni)</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutti gli accessori</a></li>
+              <li><a href="#">Borse e zaini</a></li>
+              <li><a href="#">Copricapi</a></li>
+              <li><a href="#">Calze</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <a href="#">Outlet</a>
+          <div>
+            <ul>
+              <li><a href="#">Tutte le offerte per uomo</a></li>
+              <li><a href="#">Scarpe</a></li>
+              <li><a href="#">Abbigliamento</a></li>
+              <li><a href="#">Accessori</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutte le offerte per donna</a></li>
+              <li><a href="#">Scarpe</a></li>
+              <li><a href="#">Abbigliamento</a></li>
+              <li><a href="#">Accessori</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Tutte le offerte kids</a></li>
+              <li><a href="#">Scarpe</a></li>
+              <li><a href="#">Abbigliamento</a></li>
+              <li><a href="#">Accessori</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">Running</a></li>
+              <li><a href="#">Calcio</a></li>
+              <li><a href="#">Fitnes e training</a></li>
+              <li><a href="#">Basket</a></li>
+              <li><a href="#">Tennis</a></li>
+              <li><a href="#">Golf</a></li>
+              <li><a href="#">Yoga</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <nav class="menu-mobile">
+      <button id="menu-toggle" class="hamburger" (click)="toggleMenu()">
+        &#9776;
+        <!-- Icona hamburger -->
+      </button>
+      <div class="side-menu" [class.open]="isMenuOpen">
+        <div class="close-icon" (click)="closeMenu()">&times;</div>
+        <ul>
+          <li><a href="#">Novità in evidenza</a></li>
+          <li><a href="#">Uomo</a></li>
+          <li><a href="#">Donna</a></li>
+          <li><a href="#">Kids</a></li>
+          <li><a href="#">Outlet</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <section class="promo">
+    <p>Scopri anche</p>
+    <p><strong *ngFor="let item of voiceItem"></strong></p>
+    <h4>{{ currentVoiceItem }}</h4>
+  </section>
+</body>

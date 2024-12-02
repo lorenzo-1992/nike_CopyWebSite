@@ -1,0 +1,74 @@
+<div class="product-detail">
+  <!-- Colonna di Immagini Verticale (Miniature) -->
+  <div class="image-gallery">
+    <div
+      *ngFor="let image of product?.immagini"
+      class="thumbnail"
+      (mouseenter)="onThumbnailHover(image)"
+    >
+      <img [src]="image" alt="Product thumbnail" />
+    </div>
+  </div>
+
+  <!-- Immagine Principale del Prodotto -->
+  <div class="main-image">
+    <img [src]="selectedImage" [alt]="product?.nome" />
+    <span class="rating">⭐ Valutazione alta</span>
+  </div>
+
+  <!-- Dettagli Prodotto -->
+  <div class="product-info">
+    <h2>{{ product?.nome }}</h2>
+    <p>{{ product?.categoria }}</p>
+    <h3>{{ product?.prezzo | currency : "EUR" }}</h3>
+    <p>{{ product?.descrizione }}</p>
+
+    <!-- Opzioni Colore -->
+    <div class="color-options">
+      <span
+        *ngFor="let color of product?.colori_disponibili"
+        class="color-option"
+        (click)="onSelectColor(color)"
+        [class.selected]="color === selectedColor"
+      >
+        {{ color }}
+      </span>
+    </div>
+
+    <!-- Selettore di Taglie -->
+    <div class="size-selector">
+      <h4>Seleziona la taglia/misura</h4>
+      <p>Calzata piccola: ti consigliamo di ordinare mezza misura in più</p>
+      <div class="size-options">
+        <button
+          *ngFor="let size of product?.taglie_disponibili"
+          class="size-button"
+          (click)="onSelectSize(size)"
+          [class.selected]="size === selectedSize"
+        >
+          {{ size }}
+        </button>
+      </div>
+    </div>
+
+    <!-- Messaggio di errore -->
+    <p *ngIf="showError" class="error-message">Seleziona taglia e colore</p>
+
+    <!-- Pulsanti -->
+    <button class="add-to-cart" (click)="addToCart()">Aggiungi al carrello</button>
+    <div *ngIf="showConfirmation" class="confirmation-box">
+      <p>Prodotto aggiunto al carrello!</p>
+    </div>
+    
+    <button class="add-to-pref">Aggiungi ai preferiti ♥</button>
+
+    <!-- Box di conferma -->
+    <div class="confirmation-box" [class.hidden]="!showConfirmation">
+      <img [src]="selectedImage" alt="Selected product" class="miniature" />
+      <p>Hai aggiunto al carrello:</p>
+      <p>{{ product?.nome }}</p>
+      <p>Colore: {{ selectedColor }}</p>
+      <p>Taglia: {{ selectedSize }}</p>
+    </div>
+  </div>
+</div>

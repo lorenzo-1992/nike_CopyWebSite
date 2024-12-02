@@ -1,0 +1,56 @@
+<div class="cart">
+  <div class="cart-left">
+    <h2>Il tuo carrello</h2>
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <div class="cart-item" *ngFor="let item of cartItems">
+        <img [src]="item.product.immagini[0]" alt="{{ item.product.nome }}" />
+        <div class="cart-details">
+          <h3>{{ item.product.nome }}</h3>
+          <p>Prezzo unitario: {{ item.product.prezzo | currency: 'EUR' }}</p>
+          <div class="quantity">
+            <button (click)="decrementQuantity(item.product.id)">-</button>
+            <input
+              type="number"
+              [(ngModel)]="item.quantity"
+              (input)="updateQuantity(item.product.id, item.quantity)"
+              [min]="1"
+            />
+            <button (click)="incrementQuantity(item.product.id)">+</button>
+          </div>
+          <button (click)="removeFromCart(item.product.id)" class="remove">
+            Rimuovi
+          </button>
+        </div>
+      </div>
+    </div>
+    <ng-template #emptyCart>
+      <p>Il carrello è vuoto. Inizia ad aggiungere prodotti!</p>
+    </ng-template>
+  </div>
+
+  <div class="cart-right">
+    <h2>Riepilogo</h2>
+    <div class="summary-item">
+      <span>Subtotale:</span>
+      <span>{{ totalPrice | currency: 'EUR' }}</span>
+    </div>
+    <div class="summary-item">
+      <span>Costi di spedizione:</span>
+      <span>Gratis</span>
+    </div>
+    <div class="summary-item total">
+      <span>Totale:</span>
+      <span>{{ totalPrice | currency: 'EUR' }}</span>
+    </div>
+
+    <div class="checkout-buttons">
+      <button (click)="goToPayment()">Vai al pagamento</button>
+    </div>
+
+    <div class="promo-code">
+      <h3>Hai un codice promozionale?</h3>
+      <input type="text" placeholder="Inserisci il codice" />
+      <button>Applica</button>
+    </div>
+  </div>
+</div>

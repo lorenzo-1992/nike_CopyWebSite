@@ -1,0 +1,113 @@
+<div class="promo-video">
+  <iframe
+  width="100%"
+  height="600"
+  src="https://www.youtube.com/embed/5Zw53xsQ4aU?si=fTLjc39MlwJOt2TV&autoplay=1&mute=1&loop=1&playlist=5Zw53xsQ4aU"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>
+
+</div>
+
+<div class="new-arrivals">
+  <!-- Primo Slider: Tutti i Prodotti -->
+  <div class="product-slider">
+    <h2>Scopri tutti i Prodotti:</h2>
+    <p>Una vasta scelta di scarpe per ogni tipo di esigenza!</p>
+    <div class="slider-container">
+      <div class="slider" [ngStyle]="{ transform: getTransformAll() }">
+        <div *ngFor="let product of allProducts" class="slide">
+          <a [routerLink]="['/scarpa', product.id]">
+            <img [src]="product.immagini[0]" [alt]="product.nome" />
+            <h3>{{ product.nome }}</h3>
+            <p>{{ product.prezzo | currency : "EUR" }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="nav prev" (click)="prevSlideAll()">&#10094;</button>
+    <button class="nav next" (click)="nextSlideAll()">&#10095;</button>
+  </div>
+  <div class="category-section">
+    <div class="category-slider">
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_594,c_limit/05ce255d-b3da-4841-a97d-48994de7e9ea/felpa-a-girocollo-oversize-in-fleece-sportswear-qsl3GR.png"
+          alt="Donna"
+        />
+        <button>Donna</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_594,c_limit/b75e28b1-1acd-4756-bb8a-c3af777a080e/maglia-fitness-con-zip-a-tutta-lunghezza-therma-bjp8tN.png"
+          alt="Uomo"
+        />
+        <button>Uomo</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/q_auto:eco/t_product_v1/f_auto/dpr_1.0/h_594,c_limit/407fc477-9e0a-417c-830f-17f04cf65c15/felpa-con-cappuccio-e-zip-a-tutta-lunghezza-sportswear-club-fleece-a-1GF88x.png"
+          alt="Kids"
+        />
+        <button>Kids</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/f_auto,cs_srgb/w_1536,c_limit/8f9c7c89-fb6a-4706-a389-aa5d17aa6d15/the-teenage-creatives-changing-music-and-modelling.jpg"
+          alt="Teen"
+        />
+        <button>TennAger</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_363,c_limit/3e1ab7dc-771d-4c0d-8d34-63c0d67a3572/le-migliori-scarpe-da-basket-nike-per-guardie.jpg"
+          alt="basket"
+        />
+        <button>Basket</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_496,c_limit/151916a8-7d5d-47d9-9045-cde57cb6c44c/strumento-per-trovare-scarpe-da-running.jpg"
+          alt="running"
+        />
+        <button>Running</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://static.nike.com/a/images/f_auto/dpr_3.0,cs_srgb/h_484,c_limit/59e8f5b1-b829-4e4b-b122-25a53914541a/le-migliori-scarpe-da-running-nike-per-i-piedi-cavi.jpg"
+          alt="sport"
+        />
+        <button>Sport</button>
+      </div>
+      <div class="category-slide">
+        <img
+          src="https://i1.t4s.cz//products/fn3970-010/nike-running-division-743426-fn3970-010-960.webp"
+          alt="casual"
+        />
+        <button>Casual</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Secondo Slider: Nuovi Arrivi -->
+  <div class="product-slider">
+    <h2>Scopri tutti i Nuovi Arrivi:</h2>
+    <p>Le imperdibili novità!</p>
+    <div class="slider-container">
+      <div class="slider" [ngStyle]="{ transform: getTransformNew() }">
+        <div *ngFor="let product of newArrivals" class="slide">
+          <a [routerLink]="['/scarpa', product.id]">
+            <img [src]="product.immagini[0]" [alt]="product.nome" />
+            <h3>{{ product.nome }}</h3>
+            <p>{{ product.prezzo | currency : "EUR" }}</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <button class="nav prev" (click)="prevSlideNew()">&#10094;</button>
+    <button class="nav next" (click)="nextSlideNew()">&#10095;</button>
+  </div>
+</div>
