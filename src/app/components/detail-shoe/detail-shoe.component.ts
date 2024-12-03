@@ -62,12 +62,11 @@ export class DetailShoeComponent implements OnInit {
     } else {
       this.showError = false;
       this.showConfirmation = true;
-
-      // Aggiungi prodotto al carrello
-      if (this.product) {
-        this.cartService.addToCart(this.product);
+  
+      // Aggiungi il prodotto al carrello
+      if (this.product && this.selectedColor && this.selectedSize) {
+        this.cartService.addToCart(this.product, this.selectedColor, this.selectedSize);
       }
-
       // Nascondi il box di conferma dopo 3 secondi
       setTimeout(() => {
         this.showConfirmation = false;

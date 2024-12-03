@@ -6,64 +6,54 @@ import { Scarpa } from '../model/scarpa';
   providedIn: 'root',
 })
 export class CartService {
-  private cartItems: { product: Scarpa; quantity: number }[] = [];
-  private cartItemsSubject = new BehaviorSubject<
-    { product: Scarpa; quantity: number }[]
-  >([]);
+  private cartItems: { product: Scarpa; quantity: number; colore: string; taglia: string }[] = [];
+  private cartItemsSubject = new BehaviorSubject<{ product: Scarpa; quantity: number; colore: string; taglia: string }[]>([]);
 
   cartItems$ = this.cartItemsSubject.asObservable();
 
   constructor() {
-    // Recupera gli articoli del carrello dal localStorage all'inizializzazione
     const storedCart = JSON.parse(localStorage.getItem('cartItems') || '[]');
     this.cartItems = storedCart;
     this.cartItemsSubject.next([...this.cartItems]);
   }
 
-  addToCart(product: Scarpa): void {
+  addToCart(product: Scarpa, colore: string, taglia: string): void {
     const existingItem = this.cartItems.find(
-      (item) => item.product.id === product.id
+      (item) => 
+        item.product.id === product.id &&
+        item.colore === colore &&
+        item.taglia === taglia
     );
+
     if (existingItem) {
       existingItem.quantity += 1;
     } else {
-      this.cartItems.push({ product, quantity: 1 });
+      this.cartItems.push({ product, quantity: 1, colore, taglia });
     }
-    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));;
-    this.cartItemsSubject.next([...this.cartItems]);
+
+    this.updateCartState();
   }
 
-  removeFromCart(productId: number): void {
+  removeFromCart(productId: number, colore: string, taglia: string): void {
     this.cartItems = this.cartItems.filter(
-      (item) => item.product.id !== productId
+      (item) =>
+        !(item.product.id === productId && item.colore === colore && item.taglia === taglia)
     );
-    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));;
-    this.cartItemsSubject.next([...this.cartItems]);
+    this.updateCartState();
   }
 
-  updateQuantity(productId: number, change: number): void {
-    const item = this.cartItems.find((item) => item.product.id === productId);
+  updateQuantity(productId: number, colore: string, taglia: string, quantity: number): void {
+    const item = this.cartItems.find(
+      (item) =>
+        item.product.id === productId &&
+        item.colore === colore &&
+        item.taglia === taglia
+    );
+
     if (item) {
-      item.quantity += change;
-      if (item.quantity <= 0) {
-        this.removeFromCart(productId);
-      }
-      localStorage.setItem('cartItems', JSON.stringify(this.cartItems));;
-      this.cartItemsSubject.next([...this.cartItems]);
+      item.quantity = quantity > 0 ? quantity : 1;
+      this.updateCartState();
     }
-  }
-
-  setQuantity(productId: number, quantity: number): void {
-    const item = this.cartItems.find((item) => item.product.id === productId);
-    if (item) {
-      item.quantity = quantity;
-      localStorage.setItem('cartItems', JSON.stringify(this.cartItems));;
-      this.cartItemsSubject.next([...this.cartItems]);
-    }
-  }
-
-  getCartItems() {
-    return this.cartItems;
   }
 
   getTotalPrice(): number {
@@ -75,24 +65,28 @@ export class CartService {
 
   clearCart(): void {
     this.cartItems = [];
-    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));;
-    this.cartItemsSubject.next([]);
+    this.updateCartState();
   }
 
   savePurchases(): void {
     const acquistiAttuali = JSON.parse(localStorage.getItem('acquisti') || '[]');
-
     const nuoviAcquisti = this.cartItems.map((item) => ({
       nome: item.product.nome,
       prezzo: item.product.prezzo,
-      immagine: item.product.immagini,
+      immagine: item.product.immagini[0],
       quantità: item.quantity,
+      colore: item.colore,
+      taglia: item.taglia,
     }));
 
     const acquistiAggiornati = [...acquistiAttuali, ...nuoviAcquisti];
     localStorage.setItem('acquisti', JSON.stringify(acquistiAggiornati));
 
-    this.clearCart(); // Svuota il carrello dopo aver salvato gli acquisti
+    this.clearCart();
   }
 
+  private updateCartState(): void {
+    localStorage.setItem('cartItems', JSON.stringify(this.cartItems));
+    this.cartItemsSubject.next([...this.cartItems]);
+  }
 }
