@@ -3,7 +3,6 @@ import { Router } from '@angular/router';
 import { ProductService } from '../../services/product.service';
 import { Scarpa } from '../../model/scarpa';
 import { AutenthicationService } from '../../services/autenthication.service';
-import { takeUntil } from 'rxjs';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { UserData } from '../../model/userdata';
 

@@ -60,7 +60,10 @@
       <p>Prodotto aggiunto al carrello!</p>
     </div>
     
-    <button class="add-to-pref">Aggiungi ai preferiti ♥</button>
+    <button class="add-to-pref" (click)="toggleFavorite()">
+      <span *ngIf="isFavorite">💖 Rimuovi dai Preferiti</span>
+      <span *ngIf="!isFavorite">🤍 Aggiungi ai Preferiti</span>
+    </button>
 
     <!-- Box di conferma -->
     <div class="confirmation-box" [class.hidden]="!showConfirmation">
