@@ -13,7 +13,7 @@
   <!-- Immagine Principale del Prodotto -->
   <div class="main-image">
     <img [src]="selectedImage" [alt]="product?.nome" />
-    <span class="rating">⭐ Valutazione alta</span>
+    <span class="rating">{{product?.best_seller}}⭐</span>
   </div>
 
   <!-- Dettagli Prodotto -->

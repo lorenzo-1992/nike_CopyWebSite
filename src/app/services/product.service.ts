@@ -26,6 +26,7 @@ export class ProductService {
   getBestSellers(): Observable<Scarpa[]> {
     return this.http.get<Scarpa[]>(`${this.apiUrl}?best_seller_gte=4`);
   }
+  // Metodo per ottenere un prodotto in base all'ID
   getProductById(id: number): Observable<Scarpa> {
     return this.http.get<Scarpa>(`${this.apiUrl}/${id}`);
   }

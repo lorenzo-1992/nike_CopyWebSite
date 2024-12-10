@@ -1,78 +1,178 @@
+ <!-- Box di Ringraziamento -->
+ <div *ngIf="showThankYouBox" class="thank-you-box">
+  <h3>Grazie per il tuo ordine!</h3>
+  <p>Il tuo ordine è stato completato con successo.</p>
+  <p>La consegna del tuo ordine è stata spedita.</p>
+  <p>Continua a Navigare e Scopri tutto il nostro catalogo</p>
+</div>
+
 <div class="payment-container">
-    <h2>Pagamento</h2>
-    <form #paymentForm="ngForm" (ngSubmit)="onSubmit(paymentForm)">
-      <div class="form-group">
-        <label for="cardName">Nome sulla carta</label>
-        <input
-          type="text"
-          id="cardName"
-          name="cardName"
-          [(ngModel)]="paymentData.cardName"
-          #cardName="ngModel"
-          required
-          minlength="3"
-        />
-        <div *ngIf="cardName.invalid && cardName.touched">
-          <small *ngIf="cardName.errors?.required">Il nome è obbligatorio.</small>
-          <small *ngIf="cardName.errors?.minlength">Il nome deve avere almeno 3 caratteri.</small>
-        </div>
-      </div>
+  <h2>Pagamento</h2>
+
   
-      <div class="form-group">
-        <label for="cardNumber">Numero di carta</label>
-        <input
-          type="text"
-          id="cardNumber"
-          name="cardNumber"
-          [(ngModel)]="paymentData.cardNumber"
-          #cardNumber="ngModel"
-          required
-          pattern="[0-9]{16}"
-        />
-        <div *ngIf="cardNumber.invalid && cardNumber.touched">
-          <small *ngIf="cardNumber.errors?.required">Il numero della carta è obbligatorio.</small>
-          <small *ngIf="cardNumber.errors?.pattern">Il numero della carta deve essere di 16 cifre.</small>
-        </div>
-      </div>
   
-      <div class="form-group">
-        <label for="expiryDate">Data di scadenza</label>
-        <input
-          type="text"
-          id="expiryDate"
-          name="expiryDate"
-          [(ngModel)]="paymentData.expiryDate"
-          #expiryDate="ngModel"
-          required
-          pattern="(0[1-9]|1[0-2])/([0-9]{2})"
-        />
-        <div *ngIf="expiryDate.invalid && expiryDate.touched">
-          <small *ngIf="expiryDate.errors?.required">La data di scadenza è obbligatoria.</small>
-          <small *ngIf="expiryDate.errors?.pattern">Il formato deve essere MM/AA.</small>
-        </div>
+  <form #paymentForm="ngForm" (ngSubmit)="onSubmit(paymentForm)">
+    <div class="form-group">
+      <label for="fullName">Nome completo</label>
+      <input
+        type="text"
+        id="fullName"
+        name="fullName"
+        [(ngModel)]="shippingData.fullName"
+        #fullName="ngModel"
+        required
+        minlength="3"
+      />
+      <div *ngIf="fullName.invalid && fullName.touched">
+        <small *ngIf="fullName.errors?.required"
+          >Il nome completo è obbligatorio.</small
+        >
+        <small *ngIf="fullName.errors?.minlength"
+          >Il nome deve avere almeno 3 caratteri.</small
+        >
       </div>
-  
-      <div class="form-group">
-        <label for="cvv">CVV</label>
-        <input
-          type="text"
-          id="cvv"
-          name="cvv"
-          [(ngModel)]="paymentData.cvv"
-          #cvv="ngModel"
-          required
-          pattern="[0-9]{3}"
-        />
-        <div *ngIf="cvv.invalid && cvv.touched">
-          <small *ngIf="cvv.errors?.required">Il CVV è obbligatorio.</small>
-          <small *ngIf="cvv.errors?.pattern">Il CVV deve essere di 3 cifre.</small>
-        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Indirizzo</label>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        [(ngModel)]="shippingData.address"
+        #address="ngModel"
+        required
+      />
+      <div *ngIf="address.invalid && address.touched">
+        <small>Il campo indirizzo è obbligatorio.</small>
       </div>
-  
-      <div class="button-group">
-        <button type="submit" [disabled]="paymentForm.invalid">Conferma pagamento</button>
-        <button type="button" (click)="goBack()">Torna al carrello</button>
+    </div>
+
+    <div class="form-group">
+      <label for="city">Città</label>
+      <input
+        type="text"
+        id="city"
+        name="city"
+        [(ngModel)]="shippingData.city"
+        #city="ngModel"
+        required
+      />
+      <div *ngIf="city.invalid && city.touched">
+        <small>Il campo città è obbligatorio.</small>
       </div>
-    </form>
-  </div>
-  
+    </div>
+
+    <div class="form-group">
+      <label for="postalCode">CAP</label>
+      <input
+        type="text"
+        id="postalCode"
+        name="postalCode"
+        [(ngModel)]="shippingData.postalCode"
+        #postalCode="ngModel"
+        required
+        pattern="[0-9]{5}"
+      />
+      <div *ngIf="postalCode.invalid && postalCode.touched">
+        <small *ngIf="postalCode.errors?.required"
+          >Il CAP è obbligatorio.</small
+        >
+        <small *ngIf="postalCode.errors?.pattern"
+          >Il CAP deve essere di 5 cifre.</small
+        >
+      </div>
+    </div>
+
+    <h2>Dati carta</h2>
+
+    <div class="form-group">
+      <label for="cardName">Nome sulla carta</label>
+      <input
+        type="text"
+        id="cardName"
+        name="cardName"
+        [(ngModel)]="paymentData.cardName"
+        #cardName="ngModel"
+        required
+        minlength="3"
+      />
+      <div *ngIf="cardName.invalid && cardName.touched">
+        <small *ngIf="cardName.errors?.required">Il nome è obbligatorio.</small>
+        <small *ngIf="cardName.errors?.minlength"
+          >Il nome deve avere almeno 3 caratteri.</small
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cardNumber">Numero di carta</label>
+      <input
+        type="text"
+        id="cardNumber"
+        name="cardNumber"
+        [(ngModel)]="paymentData.cardNumber"
+        #cardNumber="ngModel"
+        required
+        pattern="[0-9]{16}"
+      />
+      <div *ngIf="cardNumber.invalid && cardNumber.touched">
+        <small *ngIf="cardNumber.errors?.required"
+          >Il numero della carta è obbligatorio.</small
+        >
+        <small *ngIf="cardNumber.errors?.pattern"
+          >Il numero della carta deve essere di 16 cifre.</small
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="expiryDate">Data di scadenza</label>
+      <input
+        type="text"
+        id="expiryDate"
+        name="expiryDate"
+        [(ngModel)]="paymentData.expiryDate"
+        #expiryDate="ngModel"
+        required
+        pattern="(0[1-9]|1[0-2])/([0-9]{2})"
+      />
+      <div *ngIf="expiryDate.invalid && expiryDate.touched">
+        <small *ngIf="expiryDate.errors?.required"
+          >La data di scadenza è obbligatoria.</small
+        >
+        <small *ngIf="expiryDate.errors?.pattern"
+          >Il formato deve essere MM/AA.</small
+        >
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="cvv">CVV</label>
+      <input
+        type="text"
+        id="cvv"
+        name="cvv"
+        [(ngModel)]="paymentData.cvv"
+        #cvv="ngModel"
+        required
+        pattern="[0-9]{3}"
+      />
+      <div *ngIf="cvv.invalid && cvv.touched">
+        <small *ngIf="cvv.errors?.required">Il CVV è obbligatorio.</small>
+        <small *ngIf="cvv.errors?.pattern"
+          >Il CVV deve essere di 3 cifre.</small
+        >
+      </div>
+    </div>
+    <div class="button-group">
+      <button
+        type="submit"
+        [disabled]="paymentForm.invalid || !isShippingValid()"
+      >
+        Conferma ordine
+      </button>
+      <button type="button" (click)="goBack()">Torna al carrello</button>
+    </div>
+  </form>
+</div>

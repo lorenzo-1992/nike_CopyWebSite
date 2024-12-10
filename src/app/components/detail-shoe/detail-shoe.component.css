@@ -6,6 +6,7 @@
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 100px;
   background-color: #f9f9f9;
   align-items: flex-start;
 }
@@ -91,6 +92,8 @@
 /* Opzioni Colore */
 .color-options {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 10px;
   margin-bottom: 20px;
 }
@@ -203,7 +206,7 @@
 }
 
 .confirmation-box {
-  position: fixed;
+  position: absolute;
   top: 70px;
   right: 20px;
   width: 300px;

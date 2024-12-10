@@ -253,8 +253,8 @@ nav ul li:hover div {
   cursor: pointer;
   padding: 10px;
   position: absolute;
-  top: 35px;
-  left: 10px; /* Sposta l'icona a sinistra */
+  top: 58px;
+  left: 10px; 
 }
 .menu-desktop {
   display: block;

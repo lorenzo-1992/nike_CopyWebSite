@@ -101,14 +101,15 @@
   padding: 20px;
   background-color: #f9f9f9;
   border-left: 1px solid #ddd;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-size: 0.9rem;
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
-
+.cart-right .cnt {
+  flex: auto;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .cart-right h2 {
   font-size: 1.2rem;
   margin-bottom: 20px;
@@ -121,6 +122,7 @@
 }
 
 .cart-right .summary-item span {
+  margin: 15px 0;
   font-size: 0.9rem;
 }
 
@@ -131,6 +133,7 @@
 .cart-right .checkout-buttons button {
   width: 100%;
   padding: 10px 15px;
+  margin-top: 50px;
   font-size: 0.9rem;
   margin-bottom: 10px;
   background-color: #000;

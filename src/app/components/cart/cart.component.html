@@ -8,18 +8,40 @@
           <h3>{{ item.product.nome }}</h3>
           <p>Colore: {{ item.colore }}</p>
           <p>Taglia: {{ item.taglia }}</p>
-          <p>Prezzo unitario: {{ item.product.prezzo | currency: 'EUR' }}</p>
+          <p>Prezzo unitario: {{ item.product.prezzo | currency : "EUR" }}</p>
           <div class="quantity">
-            <button (click)="decrementQuantity(item.product.id, item.colore, item.taglia)">-</button>
+            <button
+              (click)="
+                decrementQuantity(item.product.id, item.colore, item.taglia)
+              "
+            >
+              -
+            </button>
             <input
               type="number"
               [(ngModel)]="item.quantity"
-              (input)="updateQuantity(item.product.id, item.colore, item.taglia, item.quantity)"
+              (input)="
+                updateQuantity(
+                  item.product.id,
+                  item.colore,
+                  item.taglia,
+                  item.quantity
+                )
+              "
               [min]="1"
             />
-            <button (click)="incrementQuantity(item.product.id, item.colore, item.taglia)">+</button>
+            <button
+              (click)="
+                incrementQuantity(item.product.id, item.colore, item.taglia)
+              "
+            >
+              +
+            </button>
           </div>
-          <button (click)="removeFromCart(item.product.id, item.colore, item.taglia)" class="remove">
+          <button
+            (click)="removeFromCart(item.product.id, item.colore, item.taglia)"
+            class="remove"
+          >
             Rimuovi
           </button>
         </div>
@@ -32,27 +54,24 @@
 
   <div class="cart-right">
     <h2>Riepilogo</h2>
-    <div class="summary-item">
-      <span>Subtotale:</span>
-      <span>{{ totalPrice | currency: 'EUR' }}</span>
-    </div>
-    <div class="summary-item">
-      <span>Costi di spedizione:</span>
-      <span>Gratis</span>
-    </div>
-    <div class="summary-item total">
-      <span>Totale:</span>
-      <span>{{ totalPrice | currency: 'EUR' }}</span>
+
+    <div class="cnt">
+      <div class="summary-item">
+        <span>Subtotale:</span>
+        <span>{{ totalPrice | currency : "EUR" }}</span>
+      </div>
+      <div class="summary-item">
+        <span>Costi di spedizione:</span>
+        <span>Gratis</span>
+      </div>
+      <div class="summary-item total">
+        <span>Totale:</span>
+        <span>{{ totalPrice | currency : "EUR" }}</span>
+      </div>
     </div>
 
     <div class="checkout-buttons">
       <button (click)="goToPayment()">Vai al pagamento</button>
-    </div>
-
-    <div class="promo-code">
-      <h3>Hai un codice promozionale?</h3>
-      <input type="text" placeholder="Inserisci il codice" />
-      <button>Applica</button>
     </div>
   </div>
 </div>

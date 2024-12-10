@@ -5,6 +5,7 @@ import { CartService } from '../../services/cart.service';
 import { FavoritesService } from '../../services/favorites.service';
 import { Scarpa } from '../../model/scarpa';
 import { switchMap } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-shoe',
@@ -24,7 +25,8 @@ export class DetailShoeComponent implements OnInit {
     private route: ActivatedRoute,
     private productService: ProductService,
     private cartService: CartService, // Iniezione del servizio del carrello
-    private favoritesService: FavoritesService // Iniezione del servizio dei preferiti
+    private favoritesService: FavoritesService, // Iniezione del servizio dei preferiti
+    private router: Router 
   ) {}
 
   ngOnInit(): void {
@@ -85,6 +87,7 @@ export class DetailShoeComponent implements OnInit {
       // Nascondi il box di conferma dopo 3 secondi
       setTimeout(() => {
         this.showConfirmation = false;
+        this.router.navigate(['/cart'])
       }, 3000);
     }
   }
