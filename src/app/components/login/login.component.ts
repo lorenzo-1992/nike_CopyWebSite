@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserData } from '../../model/userdata';
 import { AutenthicationService } from '../../services/autenthication.service';
 
 @Component({
@@ -9,17 +8,27 @@ import { AutenthicationService } from '../../services/autenthication.service';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent {
-  userData = new UserData();
+  email: string = '';
+  password: string = '';
+  errorMessage: string = '';
 
-  constructor(private router: Router, private authSrv: AutenthicationService) {}
+  constructor(
+    private authService: AutenthicationService,
+    private router: Router
+  ) {}
 
   onLogin(): void {
-    if (this.userData.email && this.userData.password) {
-      // Simula l'accesso
-      this.authSrv.login(this.userData);
-      this.router.navigate(['/private']);
+    if (this.email && this.password) {
+      this.authService.login(this.email, this.password);
+      this.authService.loggedUser$.subscribe((user) => {
+        if (user) {
+          this.router.navigate(['/home']);
+        } else {
+          this.errorMessage = 'Credenziali non valide. Riprova.';
+        }
+      });
     } else {
-      alert('Errore durante il login. Riprova.');
+      this.errorMessage = 'Compila tutti i campi.';
     }
   }
 }

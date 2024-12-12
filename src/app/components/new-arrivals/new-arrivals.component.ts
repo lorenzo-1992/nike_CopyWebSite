@@ -4,8 +4,8 @@ import { Scarpa } from '../../model/scarpa';
 
 @Component({
   selector: 'app-new-arrivals',
-  templateUrl: './new-arrivals.component.html',
-  styleUrls: ['./new-arrivals.component.css'],
+  templateUrl: './new-arrivals.component.html', 
+  styleUrls: ['./new-arrivals.component.css'], 
 })
 export class NewArrivalsComponent implements OnInit {
   allProducts: Scarpa[] = []; // Tutti i prodotti per il primo slider
@@ -18,47 +18,50 @@ export class NewArrivalsComponent implements OnInit {
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
+    // Recupera tutti i prodotti dal servizio
     this.productService.getAllProducts().subscribe((products) => {
-      this.allProducts = products;
-      this.newArrivals = products.filter((product) => product.nuovo_arrivo);
+      this.allProducts = products; // Assegna tutti i prodotti per il primo slider
+      this.newArrivals = products.filter((product) => product.nuovo_arrivo); // Filtra i nuovi arrivi per il secondo slider
     });
   }
 
-  // Primo slider: trasformazione per scorrimento
+  // Calcola la trasformazione per lo scorrimento del primo slider
   getTransformAll(): string {
     return `translateX(-${(this.currentIndexAll * 100) / this.visibleSlides}%)`;
   }
 
-  // Secondo slider: trasformazione per scorrimento
+  // Calcola la trasformazione per lo scorrimento del secondo slider
   getTransformNew(): string {
     return `translateX(-${(this.currentIndexNew * 100) / this.visibleSlides}%)`;
   }
 
-  // Navigazione per il primo slider
+  // Naviga alla slide precedente del primo slider
   prevSlideAll(): void {
     if (this.currentIndexAll > 0) {
-      this.currentIndexAll--;
+      this.currentIndexAll--; // Decrementa l'indice corrente
     }
   }
 
+  // Naviga alla slide successiva del primo slider
   nextSlideAll(): void {
-    const maxIndex = this.allProducts.length - this.visibleSlides;
+    const maxIndex = this.allProducts.length - this.visibleSlides; // Calcola l'indice massimo
     if (this.currentIndexAll < maxIndex) {
-      this.currentIndexAll++;
+      this.currentIndexAll++; // Incrementa l'indice corrente
     }
   }
 
-  // Navigazione per il secondo slider
+  // Naviga alla slide precedente del secondo slider
   prevSlideNew(): void {
     if (this.currentIndexNew > 0) {
-      this.currentIndexNew--;
+      this.currentIndexNew--; // Decrementa l'indice corrente
     }
   }
 
+  // Naviga alla slide successiva del secondo slider
   nextSlideNew(): void {
-    const maxIndex = this.newArrivals.length - this.visibleSlides;
+    const maxIndex = this.newArrivals.length - this.visibleSlides; // Calcola l'indice massimo
     if (this.currentIndexNew < maxIndex) {
-      this.currentIndexNew++;
+      this.currentIndexNew++; // Incrementa l'indice corrente
     }
   }
 }

@@ -540,5 +540,13 @@
       "nuovo_arrivo": true,
       "best_seller": 5
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "utente1@example.com",
+      "password": "password123",
+      "name": "lorenzo"
+    }
   ]
 }
